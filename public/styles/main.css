@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a{
+    color: black;
+
+}
+
+:root{
+    --main-bgcolor: #eee;
+    --tabs-bgcolor: #fff;
+    --dominant-bgcolor: rgb(98, 113, 243);
+    --recessive-bgcolor: rgb(255, 197, 72);
+    --confirmed-bgcolor: rgb(74, 223, 15);
+    --buttons-color: #fff;
+    --text-color: black;
+    --links-color: blue;
+    --h-text-color: var(--dominant-bgcolor);
+    --footer-background: #444;
+    --footer-color: #fff;
+    --border-color: var(--text-color);
+    --togler-bgcolor: #ddd;
+    --togler-color: black;
+    --beautiful-login-block-background: var(--dominant-bgcolor);
+    --settings-bgcolor: var(--tabs-bgcolor);
+    --rotated: 0deg;
+}
+
+
+body{
+    background: var(--main-bgcolor);
+    min-width: 1300px;
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.publications{
+    width: 70%;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dominant-bgcolor);
+    height: 40px;
+    text-decoration: none;
+}
+
+
+
+.nav-menu li{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.nav-menu a{
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+
+}
+
+.logo{
+    margin-left: 20px;
+    padding: 5px 10px;
+    
+    border: 1px solid var(--dominant-bgcolor);
+    border-radius: 15px;
+    color: var(--buttons-color);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+
+}
+
+ul li{
+    margin: 15px;
+}
+
+.edit_form .publication_image{
+    background: black;
+    min-width: 100px;
+    min-height: 100px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+nav ul{
+    display: block;
+}
+
+nav{
+    height: 30vh;
+}
+
+nav h2{
+    padding-top: 10px;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+
+
+footer{
+    height: 3vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: var(--footer-background);
+    text-align: center;
+    color: var(--footer-color);
+}
+
+.profile_head{
+    margin-top: 4vh;
+    height: 8vw;
+    background: var(--tabs-bgcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_head p{
+    margin-left: 20px;
+}
+
+.profile_head i{
+    font-size: 12px;
+    text-align: center;
+}
+
+.profile_head a{
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.profile_head a:hover{
+    background: var(--dominant-bgcolor);
+    transition: .3s;
+    color: white;
+}
+
+.publication{
+    padding: 10px;
+    padding-top: 20px;
+    background-color: var(--tabs-bgcolor);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.publication_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.publication_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.actions{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.actions button{
+    background: var(--dominant-bgcolor);
+    padding: 3px 5px;
+    border: 1px solid var(--dominant-bgcolor);
+    border-radius: 5px;
+    margin-right: 7px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+.publication_text{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+
+nav{
+    padding: 10px;
+    background-color: var(--tabs-bgcolor);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+nav a{
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+nav a:hover{
+    background: var(--dominant-bgcolor);
+    transition: .3s;
+    color: white;
+}
+
+
+
+header a:hover,
+.actions button:hover,
+.send_editing:hover,
+#create_button:hover,
+.signing_form button:hover {
+    transition: 0.3s;
+    background: var(--recessive-bgcolor);
+}
+
+#create_form{
+    width: 70%;
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#create_form .publication_text{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#create_form input,
+#create_form textarea{
+    margin: 5px 10px;
+}
+
+
+
+.create_button{
+    background: var(--dominant-bgcolor);
+    padding: 3px 8px;
+    border: 1px solid var(--dominant-bgcolor);
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.signing_form{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--tabs-bgcolor);
+}
+
+.signing_form h2{
+    padding-bottom: 20px;
+}
+
+
+
+
+.signing_form button{
+    background: var(--dominant-bgcolor);
+    padding: 3px 5px;
+    border: 1px solid var(--dominant-bgcolor);
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+
+.users_list{
+    width: 60vw;
+    padding: 20px;
+}
+
+.user{
+    padding: 15px 20px;
+    background: var(--tabs-bgcolor);
+    border: 1px solid var(--tabs-bgcolor);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subber{
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subber button{
+    background: var(--dominant-bgcolor);
+    padding: 3px 8px;
+    border: 1px solid var(--dominant-bgcolor);
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.subber button:hover{
+    transition: 0.3s;
+    background: var(--recessive-bgcolor);
+    
+}
+
+
+
